@@ -1,0 +1,122 @@
+.messageBody {
+	position: relative;
+}
+.messageContainer {
+	position: absolute;
+	color: white;
+	background: rgb(25, 25, 25);
+	text-align: center;
+	top: 18%;
+	/*left: 50%;
+	transform: translate(-50%, -50%);*/
+	display: inline-table;
+	overflow: hidden;
+	white-space: nowrap;
+	/*vertical-align: top;
+	height: 500px;*/
+}
+
+.messageContainer,
+table,
+tr,
+th,
+td {
+	border: 2px solid gray;
+	overflow-y: auto;
+}
+
+th {
+	border-collapse: collapse;
+	max-width: 100px;
+	width: 35%;
+}
+
+th > .msgHead {
+	max-width: 260px;
+	width: 100%;
+}
+
+table {
+	table-layout: auto;
+	width: 100%;
+}
+
+tbody {
+	height: 75px;
+	max-width: 800px;
+}
+
+.message {
+	white-space: normal;
+	height: 75px !important;
+	width: 100% !important;
+	min-width: 450px;
+	max-width: 800px !important;
+	padding: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: block;
+}
+
+/*.subject {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}*/
+
+.tableTd {
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+	max-width: 260px !important;
+	overflow-y: auto;
+	display: table-cell;
+}
+
+.undoContainer {
+	visibility: hidden;
+	position: absolute;
+	border: 2px solid gray;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	left: 50%;
+	top: 90px;
+	transform: translate(-50%, -50%);
+}
+
+.undoButton {
+	background: none;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.deleteButton {
+	position: relative;
+	display: table-cell;
+}
+
+.deleteButton .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 5px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.deleteButton:hover .tooltiptext {
+	visibility: visible;
+}
