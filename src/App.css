@@ -335,13 +335,13 @@ h1 {
 }
 
 .oWCaseImg {
-	height: 350px;
+	height: 290px;
 	margin: 5px;
 	border: 2px solid rgb(10, 0, 39);
 }
 
 .oWCaseImg:hover {
-	height: 350px;
+	height: 300px;
 	margin: 5px;
 	border: 2px solid red;
 	top: 0;
@@ -553,5 +553,373 @@ h1 {
 	}
 	to {
 		background: darkred;
+	}
+}
+
+@media (max-width: 1450px) and (min-width: 1000px) {
+	.container {
+		grid-template-columns: auto 50px 450px 450px 50px auto;
+	}
+
+	.container2 {
+		grid-template-columns: auto 50px 450px 450px 50px auto;
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+	.container {
+		grid-template-columns: auto 150px 500px 150px auto;
+	}
+
+	.container2 {
+		grid-template-columns: auto 150px 500px 150px auto;
+	}
+
+	.landing-zone {
+		height: 450px;
+	}
+
+	.abtTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	.abtText {
+		text-align: center;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		width: 100%;
+	}
+
+	.abtImg {
+		display: none;
+	}
+
+	.hisTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.hisImg {
+		visibility: hidden;
+		display: none;
+	}
+
+	.historyText {
+		text-align: center;
+		grid-column-start: 3;
+		grid-column-end: 4;
+		width: 100%;
+	}
+
+	.serTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.serBoxes {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	.services-box {
+		margin-left: 5px;
+		margin-right: 5px;
+		width: 250px;
+	}
+	.moreServImg {
+		display: none;
+	}
+	.moreServBoxes {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		left: 20%;
+		text-align: center;
+	}
+	.serIcon1 {
+		margin-left: 0px;
+	}
+
+	.oWTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.oWBox {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.oWCaseImg {
+		height: 150px;
+	}
+
+	.oWCaseImg:hover {
+		height: 150px;
+	}
+
+	#skills {
+		display: none;
+	}
+
+	.teamTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.teamShots {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		margin-left: 60px;
+	}
+
+	.headShots {
+		width: 200px;
+		margin: 5px;
+	}
+
+	.headShotImg {
+		width: 100%;
+	}
+
+	.contactTitle {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.contactInfo {
+		text-align: center;
+	}
+
+	.contactForm {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		padding-bottom: 40px;
+	}
+
+	.button3 {
+		position: absolute;
+		bottom: -50px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.footer {
+		grid-template-columns: auto 150px 500px 150px auto;
+	}
+
+	.footer-section1 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	.footer-section2 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	.footer-section3 {
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+}
+@media (max-width: 600px) {
+	.container {
+		grid-template-columns: auto 50px 500px 50px auto;
+	}
+
+	.container2 {
+		grid-template-columns: auto 50px 500px 50px auto;
+	}
+
+	.landing-zone {
+		height: 450px;
+	}
+
+	.abtTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.abtText {
+		margin-left: 3%;
+	}
+
+	.abtImg {
+		display: none;
+	}
+
+	.hisTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	.hisImg {
+		display: none;
+	}
+
+	.historyText {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		text-align: center;
+		width: 350px;
+		margin-left: 9%;
+	}
+
+	.serTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.serBoxes {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.services-box {
+		width: 140px;
+		height: 275px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.moreServBoxes {
+		left: 15%;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		text-align: center;
+		width: 350px;
+	}
+
+	.moreServImg {
+		display: none;
+	}
+
+	.moreServTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.serIcon1 {
+		margin-left: 2%;
+	}
+
+	.teamShots {
+		margin-left: 50px;
+	}
+
+	.headShots {
+		width: 150px;
+	}
+
+	.oWCaseImg {
+		height: 125px;
+	}
+
+	.oWCaseImg:hover {
+		height: 125px;
+	}
+
+	.oWTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.oWBox {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.skillsTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.skillsImg {
+		display: none;
+	}
+
+	.skillElms {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		margin-left: 60px;
+	}
+
+	.skillsDesc {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		width: 400px;
+		text-align: center;
+	}
+
+	.teamTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.headShots {
+		width: 130px;
+	}
+
+	.teamShots {
+		width: 110px;
+		margin-left: 10px;
+	}
+
+	.headShotImg {
+		width: 125px;
+	}
+
+	#refrences {
+		display: none;
+	}
+
+	.contactTitle {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.contactInfo {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		text-align: center;
+		width: 350px;
+		margin-left: 8%;
+	}
+
+	.contactForm {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		margin-left: 8%;
+		width: 350px;
+		margin-bottom: 50px;
+	}
+
+	.contactField {
+		width: 350px !important;
+		min-width: 350px;
+	}
+
+	.button3 {
+		position: absolute;
+		bottom: -90px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.footer {
+		grid-template-columns: auto 50px 400px 50px auto;
+	}
+
+	.footer-section1 {
+		display: block;
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+	.footer-section2 {
+		display: block;
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+	.footer-section3 {
+		display: block;
+		grid-column-start: 3;
+		grid-column-end: 4;
 	}
 }
