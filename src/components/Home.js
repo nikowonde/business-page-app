@@ -116,6 +116,7 @@ class Home extends Component {
 				<img
 					src="https://img.icons8.com/office/40/000000/circled-chevron-up.png"
 					alt="scroll to top"
+					className="toTopBtn"
 					style={{ position: 'fixed', right: '50px', bottom: '50px', zIndex: 10, cursor: 'pointer' }}
 					onClick={(e) => scrollTopFunc(e)}
 				/>

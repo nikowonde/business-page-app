@@ -558,21 +558,171 @@ h1 {
 
 @media (max-width: 1450px) and (min-width: 1000px) {
 	.container {
-		grid-template-columns: auto 50px 450px 450px 50px auto;
+		margin: auto;
+		grid-template-columns: auto 50px 350px 10px 350px 50px auto;
 	}
 
 	.container2 {
-		grid-template-columns: auto 50px 450px 450px 50px auto;
+		margin: auto;
+		grid-template-columns: auto 50px 350px 10px 350px 50px auto;
+	}
+
+	.footer {
+		grid-template-columns: auto 50px 350px 10px 350px 50px auto;
+		height: 380px;
+		display: flow-root;
+	}
+
+	.nav {
+		right: 10%;
+	}
+
+	.landing-zone {
+		height: 650px;
+	}
+
+	.abtTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+	.abtText {
+		text-align: center;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		width: 100%;
+	}
+
+	.abtImg {
+		grid-column-start: 5;
+		grid-column-end: 5;
+		width: 100%;
+	}
+
+	.hisTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.historyText {
+		width: 350px;
+		grid-column-start: 5;
+		grid-column-end: 5;
+	}
+
+	.headShotImg {
+		width: 265px;
+	}
+
+	.serTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.serBoxes {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.moreServBoxes {
+		position: relative;
+		grid-column-start: 5;
+		grid-column-end: 5;
+		text-align: left;
+		width: 350px;
+		left: 0px;
+	}
+
+	.moreServImg {
+		margin-top: 47%;
+		margin-left: 10%;
+		width: 60%;
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.oWCaseImg {
+		height: 200px;
+		margin: 5px;
+		border: 2px solid rgb(10, 0, 39);
+	}
+	.oWCaseImg:hover {
+		height: 210px;
+	}
+
+	.skillsTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.skillsDesc {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.skillsImg {
+		width: 350px;
+		grid-column-start: 5;
+		grid-column-end: 5;
+	}
+
+	.teamTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.headShotImg {
+		width: 220px;
+	}
+
+	.contactTitle {
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.contactForm {
+		grid-column-start: 5;
+		grid-column-end: 6;
+	}
+
+	.contactField {
+		width: 340px;
+		min-width: 340px;
+	}
+
+	.footer-section1 {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		height: 120px;
+	}
+
+	.footer-section2 {
+		grid-column-start: 5;
+		grid-column-end: 6;
+		height: 120px;
+	}
+
+	.footer-section3 {
+		display: block;
+		grid-column-start: 3;
+		grid-column-end: 6;
+	}
+
+	.toTopBtn {
+		position: fixed;
+		right: 170px !important;
+		bottom: 220px;
+		z-index: 10;
+		cursor: pointer;
 	}
 }
 
 @media (max-width: 1000px) and (min-width: 600px) {
 	.container {
-		grid-template-columns: auto 150px 500px 150px auto;
+		grid-template-columns: auto 75px 550px 75px auto;
 	}
 
 	.container2 {
-		grid-template-columns: auto 150px 500px 150px auto;
+		grid-template-columns: auto 75px 550px 75px auto;
 	}
 
 	.landing-zone {
@@ -619,11 +769,12 @@ h1 {
 	.serBoxes {
 		grid-column-start: 2;
 		grid-column-end: 5;
+		margin-left: 5%;
 	}
 	.services-box {
 		margin-left: 5px;
 		margin-right: 5px;
-		width: 250px;
+		width: 200px;
 	}
 	.moreServImg {
 		display: none;
@@ -649,11 +800,11 @@ h1 {
 	}
 
 	.oWCaseImg {
-		height: 150px;
+		height: 140px;
 	}
 
 	.oWCaseImg:hover {
-		height: 150px;
+		height: 145px;
 	}
 
 	#skills {
@@ -703,30 +854,42 @@ h1 {
 	}
 
 	.footer {
-		grid-template-columns: auto 150px 500px 150px auto;
+		grid-template-columns: auto 75px 550px 75px auto;
+		height: 460px;
+		display: flow-root;
 	}
 
 	.footer-section1 {
-		grid-column-start: 2;
-		grid-column-end: 5;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 	.footer-section2 {
-		grid-column-start: 2;
-		grid-column-end: 5;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		width: 400px;
+		margin: auto;
 	}
 
 	.footer-section3 {
-		grid-column-start: 2;
-		grid-column-end: 5;
+		grid-column-start: 3;
+		grid-column-end: 3;
+	}
+
+	.toTopBtn {
+		position: fixed;
+		right: 50px;
+		bottom: 220px;
+		z-index: 10;
+		cursor: pointer;
 	}
 }
 @media (max-width: 600px) {
 	.container {
-		grid-template-columns: auto 50px 500px 50px auto;
+		grid-template-columns: auto 25px 310px 25px auto !important;
 	}
 
 	.container2 {
-		grid-template-columns: auto 50px 500px 50px auto;
+		grid-template-columns: auto 25px 310px 25px auto !important;
 	}
 
 	.landing-zone {
@@ -734,12 +897,15 @@ h1 {
 	}
 
 	.abtTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.abtText {
-		margin-left: 3%;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		width: 300px;
+		margin: auto;
 	}
 
 	.abtImg {
@@ -747,8 +913,8 @@ h1 {
 	}
 
 	.hisTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 	.hisImg {
 		display: none;
@@ -756,35 +922,37 @@ h1 {
 
 	.historyText {
 		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column-end: 3;
+		width: 300px;
+		margin: auto;
 		text-align: center;
-		width: 350px;
-		margin-left: 9%;
 	}
 
 	.serTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.serBoxes {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		display: flow-root;
 	}
 
 	.services-box {
-		width: 140px;
-		height: 275px;
-		margin-left: 5px;
-		margin-right: 5px;
+		width: 200px;
+		height: 205px;
+		margin: auto;
+		margin-bottom: 5px;
 	}
 
 	.moreServBoxes {
-		left: 15%;
-		grid-column-start: 1;
-		grid-column-end: 4;
+		left: 0%;
+		margin: auto;
+		grid-column-start: 3;
+		grid-column-end: 3;
 		text-align: center;
-		width: 350px;
+		width: 300px;
 	}
 
 	.moreServImg {
@@ -792,20 +960,13 @@ h1 {
 	}
 
 	.moreServTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
+		width: 300px;
 	}
 
 	.serIcon1 {
 		margin-left: 2%;
-	}
-
-	.teamShots {
-		margin-left: 50px;
-	}
-
-	.headShots {
-		width: 150px;
 	}
 
 	.oWCaseImg {
@@ -817,18 +978,18 @@ h1 {
 	}
 
 	.oWTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.oWBox {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.skillsTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.skillsImg {
@@ -837,33 +998,38 @@ h1 {
 
 	.skillElms {
 		grid-column-start: 3;
-		grid-column-end: 4;
-		margin-left: 60px;
+		grid-column-end: 3;
+		margin: auto;
 	}
 
 	.skillsDesc {
 		grid-column-start: 3;
-		grid-column-end: 4;
-		width: 400px;
+		grid-column-end: 3;
+		margin: auto;
+		width: 300px;
 		text-align: center;
 	}
 
 	.teamTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.headShots {
-		width: 130px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	.teamShots {
-		width: 110px;
-		margin-left: 10px;
+		width: 100px;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		margin-left: 1px;
+		margin-right: 1px;
 	}
 
 	.headShotImg {
-		width: 125px;
+		width: 100px;
 	}
 
 	#refrences {
@@ -871,29 +1037,29 @@ h1 {
 	}
 
 	.contactTitle {
-		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-start: 3;
+		grid-column-end: 3;
 	}
 
 	.contactInfo {
 		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column-end: 3;
 		text-align: center;
-		width: 350px;
-		margin-left: 8%;
+		width: 290px;
+		margin-left: 0%;
 	}
 
 	.contactForm {
 		grid-column-start: 3;
-		grid-column-end: 4;
-		margin-left: 8%;
-		width: 350px;
-		margin-bottom: 50px;
+		grid-column-end: 3;
+		margin-left: 0%;
+		width: 290px;
+		margin-bottom: 60px;
 	}
 
 	.contactField {
-		width: 350px !important;
-		min-width: 350px;
+		width: 290px !important;
+		min-width: 290px;
 	}
 
 	.button3 {
@@ -904,22 +1070,22 @@ h1 {
 	}
 
 	.footer {
-		grid-template-columns: auto 50px 400px 50px auto;
+		grid-template-columns: auto 25px 310px 25px auto !important;
 	}
 
 	.footer-section1 {
 		display: block;
 		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column-end: 3;
 	}
 	.footer-section2 {
 		display: block;
 		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column-end: 3;
 	}
 	.footer-section3 {
 		display: block;
 		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column-end: 3;
 	}
 }
