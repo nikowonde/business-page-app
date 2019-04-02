@@ -18,7 +18,7 @@ const Navbar = (props) => {
 				<Link to="/messages" className="nav-link">
 					Messages
 				</Link>
-				({props.auth === true ? <button onClick={() => props.signOut()}>SIGN OUT</button> : ''})
+				{props.auth === true ? <button onClick={() => props.signOut()}>SIGN OUT</button> : ''}
 			</nav>
 		</div>
 	);
