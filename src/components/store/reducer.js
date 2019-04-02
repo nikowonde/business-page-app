@@ -27,7 +27,7 @@ const initState = {
 	posts: [],
 	auth: false,
 	user: 'admin',
-	pw: 'neekeri'
+	pw: 'salasana'
 };
 
 const reducer = (state = initState, action) => {
