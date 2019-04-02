@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import deletePic from '../images/delete.png';
+import Login from './Login';
 
 import MSGS from './otherStyles/MessageStyle.module.css';
 

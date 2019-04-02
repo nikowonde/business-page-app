@@ -23,7 +23,9 @@ class Home extends Component {
 		this.props.getPosts();
 	}
 
-	componentWillUnmount() {}
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.barloadTrigger);
+	}
 
 	barloadTrigger = () => {
 		if (

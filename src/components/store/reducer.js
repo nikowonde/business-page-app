@@ -24,7 +24,10 @@ const initState = {
     ],*/
 	newPost: undefined,
 	deletedItem: null,
-	posts: []
+	posts: [],
+	auth: false,
+	user: 'admin',
+	pw: 'neekeri'
 };
 
 const reducer = (state = initState, action) => {
@@ -113,6 +116,16 @@ const reducer = (state = initState, action) => {
 				...state,
 				messages: [ ...state.messages, action.payload ]
 			};*/
+		case 'CHANGE_AUTH_STATUS':
+			return {
+				...state,
+				auth: true
+			};
+		case 'SIGN_OUT':
+			return {
+				...state,
+				auth: false
+			};
 		default:
 			return state;
 	}

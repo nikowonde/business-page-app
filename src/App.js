@@ -1,22 +1,26 @@
 // React stuff
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { BrowserRouter, Route, Redirect, withRouter, Link } from 'react-router-dom';
 //import { connect } from 'react-redux';
 
 // Components
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Messages from './components/Messages';
+import Login from './components/Login';
 //import { newPost } from './components/actions/actualActions';
 
 // Stylesheets
 import './App.css';
+
 //let tmpPost;
 
-export default class App extends Component {
-	componentDidMount() {
-		//tmpPost = this.props.post;
-	}
+class App extends Component {
+	state = {
+		auth: false
+	};
+	componentDidMount() {}
 
 	render() {
 		//console.log(tmpPost);
@@ -32,12 +36,16 @@ export default class App extends Component {
 			}
 		}*/
 
+		const PrivateRoute = ({ props, ...rest }) => (
+			<Route {...rest} render={() => (this.props.auth === true ? messages() : <Redirect to="/login" />)} />
+		);
 		return (
 			<BrowserRouter>
 				<div className="App">
 					<Navbar />
 					<Route path="/" exact render={() => home()} />
-					<Route path="/Messages" render={() => messages()} />
+					<Route path="/login" exact render={() => login(this.props)} />
+					<PrivateRoute path="/messages" render={() => messages()} />
 				</div>
 			</BrowserRouter>
 		);
@@ -52,9 +60,17 @@ const messages = () => {
 	return <Messages />;
 };
 
-/*const mapStateToProps = (state) => {
+const login = (props) => {
+	if (props.auth === true) {
+		return <Redirect to="/messages" />;
+	} else {
+		return <Login />;
+	}
+};
+
+const mapStateToProps = (state) => {
 	return {
-		post: state.newPost
+		auth: state.auth
 	};
-};*/
-//export default connect(mapStateToProps, { newPost })(App);
+};
+export default connect(mapStateToProps)(App);

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return (
 		<div className="header">
 			<nav className="nav">
@@ -14,12 +15,25 @@ const Navbar = () => {
 				<Link to="/" className="nav-link">
 					Gallery
 				</Link>
-				<Link to="/Messages" className="nav-link">
+				<Link to="/messages" className="nav-link">
 					Messages
 				</Link>
+				({props.auth === true ? <button onClick={() => props.signOut()}>SIGN OUT</button> : ''})
 			</nav>
 		</div>
 	);
 };
 
-export default withRouter(Navbar);
+const mapStateToProps = (state) => {
+	return {
+		auth: state.auth
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		signOut: () => dispatch({ type: 'SIGN_OUT' })
+	};
+};
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Navbar));
